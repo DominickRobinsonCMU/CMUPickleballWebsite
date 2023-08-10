@@ -1,0 +1,79 @@
+/* Members page styles */
+
+/* Styles for term section */
+.term {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.term h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the member grid within a term section */
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for individual members */
+.member {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Portrait style */
+.member-portrait {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Member name style */
+.member h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+/* Member description style */
+.member p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+/* Member link button style */
+.member-link {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.member-link:hover {
+    background-color: #FF6347;
+}

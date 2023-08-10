@@ -1,0 +1,48 @@
+/* Merch page styles */
+
+.merch-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-image {
+    flex-basis: 40%;
+    padding: 10px;
+}
+
+.product-details {
+    flex-basis: 60%;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    margin-top: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #FF4500;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
