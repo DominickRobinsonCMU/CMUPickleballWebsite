@@ -71,6 +71,8 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    margin-top: auto;
+    /* Push footer to the bottom */
 }
 
 .social-media-links {
