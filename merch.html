@@ -17,36 +17,38 @@
 
 <script src="js/navbar.js"></script>
 
-
 <body>
 
     <main class="merch-container">
         <div class="product">
             <div class="product-image">
-                <img src="product1.jpg" alt="Product 1">
+                <div class="carousel">
+                    <img src="images/pickles/pete_the_pickle.png" alt="Product 1 - Image 1">
+                    <img src="images/pickles/pete-the-pickle-ice-cold.png" alt="Product 1 - Image 2">
+                    <img src="images/pickles/pete-the-pickle-evil.png" alt="Product 1 - Image 2">
+                    <!-- Add more images for Product 1 -->
+                </div>
+                <div class="arrow-buttons">
+                    <button class="prev-arrow">←</button>
+                    <button class="next-arrow">→</button>
+                </div>
             </div>
+
             <div class="product-details">
                 <h2>Product Name 1</h2>
                 <p class="price">$19.99</p>
                 <p class="description">Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.</p>
+                    elit.
+                </p>
             </div>
         </div>
-        <div class="product">
-            <div class="product-image">
-                <img src="product2.jpg" alt="Product 2">
-            </div>
-            <div class="product-details">
-                <h2>Product Name 2</h2>
-                <p class="price">$24.99</p>
-                <p class="description">Description of Product 2. Sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.</p>
-            </div>
-        </div>
+
         <!-- Add more products here -->
     </main>
-</body>
 
-<script src="js/footer.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/merch.js"></script> <!-- Reference the merch.js file -->
+
+</body>
 
 </html>
