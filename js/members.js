@@ -43,15 +43,16 @@ function addMember(name, portraitPath = "", websiteUrl = "", bestShotUrl = "") {
 
     text += `<h3>` + name + `</h3>`
 
-    if (websiteUrl != "") {
-        text += `<a href = "` + websiteUrl + `" target = "_blank" class="member-link" > Website</a> `
-    }
+    text += `<a href = "` + websiteUrl + `" target = "_blank" class="member-link"`
+    if (bestShotUrl == "") text += `style="visibility: hidden;"`
+    text += `> Website</a> `
 
-    if (bestShotUrl != "") {
-        text += `<a href = "` + bestShotUrl + `" target = "_blank" class="best-shot-link" > Best shot</a> `
-    }
 
-    text += `</section > `
+    text += `<a href = "` + bestShotUrl + `" target = "_blank" class="best-shot-link" `
+    if (bestShotUrl == "") text += `style = "visibility: hidden;"`
+    text += `> Best highlight</a> `
+
+    text += `</section> `
 
     document.write(text)
 }
