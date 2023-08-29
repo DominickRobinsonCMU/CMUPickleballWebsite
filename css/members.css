@@ -3,7 +3,7 @@
 
 
 /* Styles for semester section */
-.semester {
+.year {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -12,7 +12,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.semester h2 {
+.year h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
