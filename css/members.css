@@ -36,15 +36,15 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Portrait style */
 .member-portrait {
-    max-width: 80px;
-    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    /* height: auto; */
     border-radius: 50%;
     margin: 0 auto 10px;
 }
@@ -54,6 +54,7 @@
     font-size: 20px;
     margin: 10px 0 5px;
     color: #333;
+    vertical-align: top;
 }
 
 /* Member description style */

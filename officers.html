@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/officers.css">
+    <link rel="stylesheet" href="css/members.css">
+
     <title>CMU Pickleball Club - Officers</title>
-    <script src="common.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/officers.js"></script>
+    <script src="js/members.js"></script>
 </head>
 
 <body>
@@ -16,22 +20,39 @@
         <img src="images/pickles/pete-the-pickle-serious.png" alt="Pete the Pickle" class="logo">
     </header>
     <script src="js/navbar.js"></script>
-    <main>
+    <main class="members-container">
+
         <section>
-            <h2>Term: Fall 2023</h2>
-            <div class="officers-row">
-                <div class="officer">
-                    <img src="officer1.jpg" alt="Officer 1">
-                    <p class="name">John Doe</p>
-                    <p class="position">President</p>
-                    <p class="quote">"Pickleball is more than just a game; it's a way of life."</p>
-                </div>
-                <div class="officer">
-                    <img src="officer2.jpg" alt="Officer 2">
-                    <p class="name">Jane Smith</p>
-                    <p class="quote">"Pickleball brings people together and creates lasting friendships."</p>
-                </div>
-                <!-- Add more officers here -->
+            <h2>2024 Officers</h2>
+            <div class="member-grid">
+                <script>
+                    addOfficer("Tristan Ohler", "Co-President", "24/tristan.jpeg")
+                    addOfficer("Dominick Robinson", "Co-President", "25/dom.jfif", "The most important point is always the next one.")
+                    addOfficer("Gabriel Prado", "Captain", "24/gabe.jpg")
+                    addOfficer("Gavin Ohler", "Finance Officer")
+                    addOfficer("Evan Zhang", "Logistics")
+                </script>
+
+            </div>
+            <div class="achievements">
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Currently holding office...</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>2023 Officers</h2>
+            <div class="member-grid">
+                <script>
+                    addOfficer("Dominick Robinson", "President", "25/dom.jfif", "The most important point is always the next one.")
+                    addOfficer("Chris Alexopoulos", "Vice President", "24/chris.jpg")
+                    addOfficer("Gabriel Prado", "Finance Officer", "24/gabe.jpg")
+                    addOfficer("Vatsalya Verma", "Risk Management Officer", "24/vatsalya.jpg")
+                    addOfficer("Tristan Ohler", "God", "24/tristan.jpeg")
+                </script>
+
             </div>
             <div class="achievements">
                 <h3>Achievements</h3>
@@ -44,7 +65,6 @@
                 </ul>
             </div>
         </section>
-        <!-- Add more term sections here -->
     </main>
     <script src="js/footer.js"></script>
 </body>

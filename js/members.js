@@ -8,7 +8,8 @@ function addMember(name, portraitPath = "", nickname = "", bestShotUrl = "") {
 
     text += `<h3>` + name + `</h3>`;
 
-    text += `<h4>"` + nickname + `"</h4>`;
+    if (nickname != "")
+        text += `<h4>"` + nickname + `"</h4>`;
 
     // if (bestShotUrl == "") text += `style="visibility: hidden;"`
 
