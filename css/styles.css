@@ -1,19 +1,60 @@
 /* Reset some default styles */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* body {
+    margin: 0;
+} */
+
+
+section {
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #aaa;
+}
+
+section h4 {
+    font-weight: normal;
+}
+
+section ol {
+    list-style: decimal;
+    margin-left: 20px;
+    text-align: left;
+}
+
+section li {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+section p {
+    text-align: left;
+}
+
+
 
 a {
     color: #FF4500;
-    text-decoration: none;
-    transition: color 0.3s;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 a:hover {
@@ -38,6 +79,8 @@ header {
     margin-top: 10px;
 }
 
+
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -50,19 +93,22 @@ nav a {
     color: #FFF;
     padding: 10px 20px;
     transition: background-color 0.3s;
+    text-decoration: none;
+    font-weight: normal;
 }
 
 nav a:hover {
     background-color: #FFD700;
+    color: #228B22;
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* padding: 20px; */
+    /* background-color: #FFF; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
 /* footer and icons */
@@ -136,4 +182,49 @@ footer p {
 
 .email-button:hover {
     background-color: #FF6347;
+}
+
+
+.carousel {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+    transition: 0.5s ease;
+}
+
+.carousel .prev,
+.carousel .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.carousel .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carousel .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.carousel .prev:hover,
+.carousel .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }

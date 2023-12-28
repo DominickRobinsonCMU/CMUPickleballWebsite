@@ -7,7 +7,7 @@ var footer = `
         <a href="https://tartanconnect.cmu.edu/cmupb/home/">Tartan Connect</a>
         <a href="mailto:dominicr@andrew.cmu.edu">Contact us!</a>
     </div>
-    <p>CMU Pickleball, proudly serving you since 2023!</p>
+    <p>CMU Pickleball, proudly dinking since 2023!</p>
 </footer>
 `;
 

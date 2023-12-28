@@ -5,50 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/merch.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <script src="common.js"></script>
-    <title>CMU Pickleball Club - Merch</title>
+    <title>Merch - CMU Pickleball Club</title>
 </head>
-
 <header>
     <h1>Merchandise</h1>
     <img src="images/pickles/pete-the-pickle-ice-cold.png" alt="Pete the Pickle" class="logo">
 </header>
-
 <script src="js/navbar.js"></script>
 
 <body>
+    <main>
+        <section>
+            <p>Stay tuned for some epic merch from CMU Pickleball Club!</p>
 
-    <main class="merch-container">
-        <div class="product">
-            <div class="product-image">
-                <div class="carousel">
-                    <img src="images/pickles/pete_the_pickle.png" alt="Product 1 - Image 1">
-                    <img src="images/pickles/pete-the-pickle-ice-cold.png" alt="Product 1 - Image 2">
-                    <img src="images/pickles/pete-the-pickle-evil.png" alt="Product 1 - Image 2">
-                    <!-- Add more images for Product 1 -->
+            <!-- First Carousel -->
+            <div id="carousel1" class="carousel">
+                <div class="carousel-images">
+                    <img src="images/pickles/pete_the_pickle.png" alt="Merch Image 1">
+                    <img src="images/pickles/pete-the-pickle-evil.png" alt="Merch Image 2">
+                    <!-- Add more images as needed -->
                 </div>
-                <div class="arrow-buttons">
-                    <button class="prev-arrow">←</button>
-                    <button class="next-arrow">→</button>
-                </div>
+                <button class="prev" onclick="moveSlide('carousel1', -1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('carousel1', 1)">&#10095;</button>
             </div>
 
-            <div class="product-details">
-                <h2>Product Name 1</h2>
-                <p class="price">$19.99</p>
-                <p class="description">Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                </p>
+            <!-- Second Carousel -->
+            <div id="carousel2" class="carousel">
+                <div class="carousel-images">
+                    <img src="images/pickles/pete_the_pickle.png" alt="Merch Image 1">
+                    <img src="images/pickles/pete-the-pickle-ice-cold.png" alt="Merch Image 2">
+                    <!-- Add more images as needed -->
+                </div>
+                <button class="prev" onclick="moveSlide('carousel2', -1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('carousel2', 1)">&#10095;</button>
             </div>
-        </div>
-
-        <!-- Add more products here -->
+        </section>
     </main>
-
-    <script src="js/footer.js"></script>
-    <script src="js/merch.js"></script> <!-- Reference the merch.js file -->
-
 </body>
+
+<script src="js/footer.js"></script>
+<script src="js/carousel.js"></script>
+
 
 </html>

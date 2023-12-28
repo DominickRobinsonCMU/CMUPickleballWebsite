@@ -3,7 +3,7 @@
 
 
 /* Styles for semester section */
-.year {
+/* .year {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -18,7 +18,7 @@
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
-}
+} */
 
 /* Style the member grid within a term section */
 .member-grid {
@@ -89,9 +89,10 @@
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .best-shot-link:hover {
-    background-color: #5a3dff;
+    background-color: #ff0000;
+    color: #fff
 }

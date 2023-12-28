@@ -2,7 +2,7 @@
 
 var button = `
         <div class="email-button-container">
-            <a class="email-button" href="mailto:dominicr@andrew.cmu.edu">Email Us</a>
+            <a class="email-button" href="mailto:cmupickleball@andrew.cmu.edu">Email Us</a>
         </div>
         `;
 
