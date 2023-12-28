@@ -91,7 +91,7 @@ nav ul {
 }
 
 nav li {
-    margin: 10px 0;
+    margin: 10px 5px;
 }
 
 nav a {
@@ -99,8 +99,9 @@ nav a {
     padding: 10px 20px;
     transition: background-color 0.3s;
     text-decoration: none;
-    font-weight: normal;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 nav a:hover {
