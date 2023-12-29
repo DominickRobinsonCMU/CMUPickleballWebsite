@@ -15,3 +15,7 @@ section.tournaments h4,
 section.tournaments ul {
     text-align: left;
 }
+
+th {
+    text-align: center
+}

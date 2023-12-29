@@ -19,7 +19,7 @@
 
 
 
-<body>
+<body style="width: 1200px;">
     <main>
         <!-- <section>
             <h2>Tournament Results</h2>
@@ -37,17 +37,21 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                        <th># of Medals (Singles)</th>
-                        <th># of Medals (Doubles)</th>
-                        <th># of Medals (Mixed)</th>
-                        <th># of Medals (Gold)</th>
-                        <th># of Medals (Silver)</th>
-                        <th># of Medals (Bronze)</th>
-                        <th># of Medals (Total)</th>
+                        <th rowspan="2">Rank</th>
+                        <th rowspan="2">Name</th>
+                        <th colspan="7"># of Medals</th>
+                    </tr>
+                    <tr>
+                        <th>(Singles)</th>
+                        <th>(Doubles)</th>
+                        <th>(Mixed)</th>
+                        <th>(Gold)</th>
+                        <th>(Silver)</th>
+                        <th>(Bronze)</th>
+                        <th>(Total)</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <script>
                         createGOATList();
