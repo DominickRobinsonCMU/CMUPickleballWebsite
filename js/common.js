@@ -1,3 +1,4 @@
+
 function loadHeaderAndFooter() {
     const headerContainer = document.getElementById('header-container');
     const footerContainer = document.getElementById('footer-container');
@@ -14,3 +15,6 @@ function loadHeaderAndFooter() {
             footerContainer.innerHTML = footer;
         });
 }
+
+
+

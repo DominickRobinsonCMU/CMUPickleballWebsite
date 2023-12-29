@@ -260,3 +260,51 @@ footer p {
 .carousel .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+
+
+/* table styling for GOAT list */
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+/* Style for table headers */
+/* Style for table headers */
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    /* Add borders to cells */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Style for alternating row background colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Additional styling */
+table {
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}

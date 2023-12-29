@@ -1,0 +1,17 @@
+section.tournaments ul {
+    list-style-type: disc;
+    /* Use bullet points */
+    margin-left: 20px;
+    /* Adjust the left margin to control the indentation */
+}
+
+section.tournaments li {
+    margin-left: 0;
+    /* Reset the margin for list items to remove extra indentation */
+}
+
+section.tournaments h3,
+section.tournaments h4,
+section.tournaments ul {
+    text-align: left;
+}
