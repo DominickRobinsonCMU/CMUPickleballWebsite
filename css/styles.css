@@ -122,6 +122,9 @@ header h1 {
         2px 2px 0 #000; */
 }
 
+
+
+
 .logo {
     width: 150px;
     height: auto;
@@ -186,6 +189,18 @@ nav a {
 nav a:hover {
     background-color: var(--red);
     color: var(--white);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    nav .right-links a {
+        font-size: small;
+        padding: 0;
+    }
+
+    nav .right-links {
+        margin: 0;
+    }
 }
 
 main {

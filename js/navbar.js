@@ -5,7 +5,6 @@ var navbar = `
         <li><a href="about.html">CMU Pickleball</a></li>
     </ul>
     <ul class="right-links">
-        <li><a href="about.html">About</a></li>
         <li><a href="members.html">Members</a></li>
         <li><a href="officers.html">Officers</a></li>
         <li><a href="articles.html">Articles</a></li>
