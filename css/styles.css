@@ -94,6 +94,27 @@ header {
     text-align: center;
     background-color: var(--red);
     padding: 20px;
+
+    /* background-image: url('path-to-your-image.jpg'); */
+    /* Replace with the actual image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Adjust the background size as needed */
+    background-position: center;
+    /* Center the background image */
+    color: white;
+    /* Text color on the header */
+    text-align: center;
+    /* Center-align the text */
+    padding: 100px;
+    /* Add padding for content within the header */
+
+}
+
+header h1 {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    border-width: 0px;
 }
 
 .logo {
@@ -103,15 +124,44 @@ header {
 }
 
 
+nav {
+    /* make navbar follow screen */
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 1);
+    transition: background-color 0.3s ease;
+}
+
+nav img {
+    width: auto;
+    /* Set the maximum width of the image to 100% of the container */
+    height: 35px;
+    /* Allow the image to maintain its aspect ratio */
+    display: block;
+    /* Remove any extra space below the image */
+    float: left;
+}
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    background-color: var(--black);
     padding: 10px;
     flex-wrap: wrap;
+    align-items: center;
 }
+
+nav .left-links {
+    float: left;
+}
+
+nav .right-links {
+    float: right;
+}
+
+
 
 nav li {
     margin: 10px 5px;
@@ -123,9 +173,10 @@ nav a {
     transition: background-color 0.3s;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: x-large;
     border-radius: 5px;
 }
+
 
 nav a:hover {
     background-color: var(--red);
@@ -307,4 +358,222 @@ table {
     table {
         font-size: 12px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for members page */
+
+/* Style the member grid within a term section */
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for individual members */
+.member {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Portrait style */
+.member-portrait {
+    max-width: 100px;
+    max-height: 100px;
+    /* height: auto; */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Member name style */
+.member h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #333;
+    vertical-align: top;
+}
+
+/* Member description style */
+.member p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+/* Member link button style */
+.member-link {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.member-link:hover {
+    background-color: #FF6347;
+}
+
+.best-shot-link {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2600ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.best-shot-link:hover {
+    background-color: #ff0000;
+    color: #fff
+}
+
+
+
+/* styles for officers page */
+/* Officers page styles */
+
+
+
+
+.officer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for individual members */
+.officer {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+/* Portrait style */
+.officer-portrait {
+    max-width: 100px;
+    max-height: 100px;
+    /* height: auto; */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.officer p {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+/* Member name style */
+.officer p.name {
+    font-size: 24px;
+    margin: 5px 0;
+    color: #000;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.officer p.position {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #222;
+}
+
+.officer p.quote {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Styles for the achievements section */
+
+
+.achievements {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.achievements h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.achievements ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.achievements li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* styles for HoF */
+section.tournaments ul {
+    list-style-type: disc;
+    /* Use bullet points */
+    margin-left: 20px;
+    /* Adjust the left margin to control the indentation */
+}
+
+section.tournaments li {
+    margin-left: 0;
+    /* Reset the margin for list items to remove extra indentation */
+}
+
+section.tournaments h3,
+section.tournaments h4,
+section.tournaments ul {
+    text-align: left;
+}
+
+th {
+    text-align: center
 }
