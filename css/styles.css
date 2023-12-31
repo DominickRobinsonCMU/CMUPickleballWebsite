@@ -6,6 +6,9 @@
     --black: #333;
     --white: #fff;
 
+    background-color: var(--red);
+
+
 }
 
 
@@ -17,7 +20,7 @@
 }
 
 /* body {
-    margin: 0;
+    background-color: var(--red);
 } */
 
 h1 {
@@ -115,11 +118,11 @@ header h1 {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0px;
     border-width: 0px;
-    /* text-shadow:
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000; */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 
