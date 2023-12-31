@@ -194,7 +194,7 @@ nav a:hover {
 /* Responsive design */
 @media screen and (max-width: 768px) {
     nav .right-links a {
-        font-size: small;
+        font-size: large;
         padding: 0;
     }
 
