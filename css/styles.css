@@ -7,8 +7,6 @@
     --white: #fff;
 
     background-color: var(--red);
-
-
 }
 
 
@@ -115,6 +113,7 @@ header {
 }
 
 header h1 {
+    top: 10em;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0px;
     border-width: 0px;
