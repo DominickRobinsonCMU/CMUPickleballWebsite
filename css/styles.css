@@ -125,8 +125,6 @@ header h1 {
 }
 
 
-
-
 .logo {
     width: 150px;
     height: auto;
@@ -141,69 +139,38 @@ nav {
     z-index: 1030;
     width: 100%;
     background-color: rgba(51, 51, 51, 1);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
-nav img {
-    width: auto;
-    /* Set the maximum width of the image to 100% of the container */
-    height: 35px;
-    /* Allow the image to maintain its aspect ratio */
-    display: block;
-    /* Remove any extra space below the image */
-    float: left;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-nav .left-links {
-    float: left;
-}
-
-nav .right-links {
-    float: right;
-}
-
-
-
-nav li {
-    margin: 10px 5px;
+.navbar {
+    overflow: auto;
+    white-space: nowrap;
 }
 
 nav a {
     color: #FFF;
-    padding: 10px 20px;
     transition: background-color 0.3s;
     text-decoration: none;
     font-weight: bold;
-    font-size: x-large;
-    border-radius: 5px;
+    font-size: large;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+nav a:last-child {
+    border-right: none;
 }
 
 
-nav a:hover {
+.navbar a:hover {
     background-color: var(--red);
     color: var(--white);
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    nav .right-links a {
-        font-size: large;
-        padding: 0;
-    }
 
-    nav .right-links {
-        margin: 0;
-    }
-}
 
 main {
     max-width: 800px;
@@ -221,6 +188,8 @@ footer {
     background-color: #333;
     color: #fff;
     margin-top: auto;
+    overflow: auto;
+    white-space: nowrap;
     /* Push footer to the bottom */
 }
 
