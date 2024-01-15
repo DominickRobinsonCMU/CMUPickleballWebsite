@@ -159,14 +159,10 @@ nav a {
     font-size: x-large;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
     padding: 10px;
 }
 
-/* Add a gray right border to all list items, except the last item (last-child) */
-nav a:last-child {
-    border-right: none;
-}
 
 
 .navbar a:hover {
