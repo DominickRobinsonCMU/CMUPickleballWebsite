@@ -10,7 +10,6 @@
 }
 
 html {
-    overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
 }
 
@@ -118,14 +117,16 @@ header {
 
 header h1 {
     top: 10em;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0px;
-    border-width: 0px;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: white;
+    /* text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000; */
 }
 
 
@@ -156,7 +157,7 @@ nav a {
     transition: background-color 0.3s;
     text-decoration: none;
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
     display: inline-block;
     vertical-align: middle;
     margin: 0 5px 0 0;
