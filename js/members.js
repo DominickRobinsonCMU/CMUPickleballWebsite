@@ -11,6 +11,8 @@ function addMember(name, portraitPath = "", nickname = "", bestShotUrl = "") {
     if (nickname != "")
         text += `<h4>"` + nickname + `"</h4>`;
 
+    // if (quote != "") text += `<h4><i>"` + quote + `"</i></h4>`;
+
     // if (bestShotUrl == "") text += `style="visibility: hidden;"`
 
     if (bestShotUrl) text += `<a href = "` + bestShotUrl + `" target = "_blank" class="best-shot-link" > Best highlight</a>`;
