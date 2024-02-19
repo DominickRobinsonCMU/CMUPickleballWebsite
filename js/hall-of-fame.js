@@ -29,7 +29,12 @@ Gabriel Prado,Battle at the Bridge,Doubles,Bronze
 Tristan Ohler,WV Championships,Doubles,Gold
 Claire Marlowe,WV Championships,Doubles,Gold
 Dominick Robinson,CMU vs CWRU vs OSU,Doubles,Silver
-Gabriel Prado,CMU vs CWRU vs OSU,Doubles,Silver`;
+Gabriel Prado,CMU vs CWRU vs OSU,Doubles,Silver
+Dominick Robinson,CMU vs Mt Aloysius,Doubles,Silver
+Gabriel Prado,CMU vs Mt Aloysius,Doubles,Silver
+Drake Som,CMU vs Mt Aloysius,Doubles,Gold
+Evan Zhang,CMU vs Mt Aloysius,Doubles,Gold`;
+
 
     // Parse the CSV data into an array of rows
     const rows = csvData.split('\n');
