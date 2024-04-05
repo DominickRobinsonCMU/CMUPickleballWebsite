@@ -6,6 +6,7 @@ var navbar = `
         <a href="officers.html">Officers</a>
         <a href="articles.html">Articles</a>
         <a href="hall-of-fame.html">Hall of Fame</a>
+        <a href="video-game.html">Video Game</a>
         <a href="lore.html">Lore</a>
         <a href="links.html">Links</a>
         <a href="calendar.html">Calendar</a>
