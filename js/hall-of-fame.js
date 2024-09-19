@@ -2,13 +2,13 @@ function addGOAT(rank, name, medalsSingles, medalsDoubles, medalsMixed, medalsGo
     var text = `<tr>`;
     text += "<td>" + rank + "</td>";
     text += "<td>" + name + "</td>";
-    text += "<td>" + medalsSingles + "</td>";
-    text += "<td>" + medalsDoubles + "</td>";
-    text += "<td>" + medalsMixed + "</td>";
     text += "<td>" + medalsGold + "</td>";
     text += "<td>" + medalsSilver + "</td>";
     text += "<td>" + medalsBronze + "</td>";
     text += "<td>" + (medalsSingles + medalsDoubles + medalsMixed) + "</td>";
+    text += "<td>" + medalsSingles + "</td>";
+    text += "<td>" + medalsDoubles + "</td>";
+    text += "<td>" + medalsMixed + "</td>";
     text += `</tr>`
 
     document.write(text);
@@ -33,7 +33,12 @@ Gabriel Prado,CMU vs CWRU vs OSU,Doubles,Silver
 Dominick Robinson,CMU vs Mt Aloysius,Doubles,Silver
 Gabriel Prado,CMU vs Mt Aloysius,Doubles,Silver
 Drake Som,CMU vs Mt Aloysius,Doubles,Gold
-Evan Zhang,CMU vs Mt Aloysius,Doubles,Gold`;
+Evan Zhang,CMU vs Mt Aloysius,Doubles,Gold
+Tristan Ohler,Gamma,Doubles,Gold
+Drake Som,Gamma,Doubles,Gold
+Evan Zhang,Gamma,Doubles,Gold
+Evan Zhang,Gamma,Singles,Silver`
+
 
 
     // Parse the CSV data into an array of rows
@@ -95,9 +100,7 @@ Evan Zhang,CMU vs Mt Aloysius,Doubles,Gold`;
 
     // Sort players by the total number of medals in descending order
     playerMedalsArray.sort((a, b) => {
-        if (b.total !== a.total) {
-            return b.total - a.total; // Sort by total medals
-        } else if (b.gold !== a.gold) {
+        if (b.gold !== a.gold) {
             return b.gold - a.gold; // Sort by gold medals
         } else if (b.silver !== a.silver) {
             return b.silver - a.silver; // Sort by silver medals
