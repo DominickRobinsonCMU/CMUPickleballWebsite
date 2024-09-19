@@ -5,10 +5,11 @@ function addGOAT(rank, name, medalsSingles, medalsDoubles, medalsMixed, medalsGo
     text += "<td>" + medalsGold + "</td>";
     text += "<td>" + medalsSilver + "</td>";
     text += "<td>" + medalsBronze + "</td>";
-    text += "<td>" + (medalsSingles + medalsDoubles + medalsMixed) + "</td>";
     text += "<td>" + medalsSingles + "</td>";
     text += "<td>" + medalsDoubles + "</td>";
     text += "<td>" + medalsMixed + "</td>";
+    text += "<td>" + (medalsSingles + medalsDoubles + medalsMixed) + "</td>";
+    text += "<td>" + (3 * medalsGold + 2 * medalsSilver + medalsBronze) + "</td>";
     text += `</tr>`
 
     document.write(text);
@@ -16,7 +17,7 @@ function addGOAT(rank, name, medalsSingles, medalsDoubles, medalsMixed, medalsGo
 
 
 function createGOATList() {
-    // Define the CSV file content (you can also read it from a file using FileReader)
+    // Define the CSV file content
     const csvData = `Gabriel Prado,Nitro,Singles,Bronze
 Tristan Ohler,Gamma,Singles,Bronze
 Dominick Robinson,Gamma,Singles,Silver
@@ -37,9 +38,8 @@ Evan Zhang,CMU vs Mt Aloysius,Doubles,Gold
 Tristan Ohler,Gamma,Doubles,Gold
 Drake Som,Gamma,Doubles,Gold
 Evan Zhang,Gamma,Doubles,Gold
-Evan Zhang,Gamma,Singles,Silver`
-
-
+Evan Zhang,Gamma,Singles,Silver
+Vincent Sokalski,Gamma,Doubles,Bronze`;
 
     // Parse the CSV data into an array of rows
     const rows = csvData.split('\n');
@@ -49,11 +49,11 @@ Evan Zhang,Gamma,Singles,Silver`
 
     // Loop through each row to calculate medals
     rows.forEach((row) => {
-        // console.log("Current row:", row)
         const [player, tournament, format, medal] = row.split(',');
         if (!playerMedals[player]) {
-            playerMedals[player] = { singles: 0, doubles: 0, mixed: 0, bronze: 0, silver: 0, gold: 0, total: 0 };
+            playerMedals[player] = { singles: 0, doubles: 0, mixed: 0, bronze: 0, silver: 0, gold: 0, total: 0, goatScore: 0 };
         }
+
         switch (format) {
             case 'Singles':
                 playerMedals[player].singles += 1;
@@ -69,12 +69,15 @@ Evan Zhang,Gamma,Singles,Silver`
         switch (medal) {
             case 'Bronze':
                 playerMedals[player].bronze += 1;
+                playerMedals[player].goatScore += 1;
                 break;
             case 'Silver':
                 playerMedals[player].silver += 1;
+                playerMedals[player].goatScore += 2;
                 break;
             case 'Gold':
                 playerMedals[player].gold += 1;
+                playerMedals[player].goatScore += 3;
                 break;
         }
 
@@ -94,13 +97,16 @@ Evan Zhang,Gamma,Singles,Silver`
                 silver: playerMedals[player].silver,
                 gold: playerMedals[player].gold,
                 total: playerMedals[player].total,
+                goatScore: playerMedals[player].goatScore
             });
         }
     }
 
-    // Sort players by the total number of medals in descending order
+    // Sort players by GOAT score first, then by medals (Gold > Silver > Bronze)
     playerMedalsArray.sort((a, b) => {
-        if (b.gold !== a.gold) {
+        if (b.goatScore !== a.goatScore) {
+            return b.goatScore - a.goatScore; // Sort by GOAT score
+        } else if (b.gold !== a.gold) {
             return b.gold - a.gold; // Sort by gold medals
         } else if (b.silver !== a.silver) {
             return b.silver - a.silver; // Sort by silver medals
@@ -118,24 +124,20 @@ Evan Zhang,Gamma,Singles,Silver`
         const currentPlayer = playerMedalsArray[i];
 
         if (
-            prevPlayer.total === currentPlayer.total &&
+            prevPlayer.goatScore === currentPlayer.goatScore &&
             prevPlayer.gold === currentPlayer.gold &&
             prevPlayer.silver === currentPlayer.silver &&
             prevPlayer.bronze === currentPlayer.bronze
         ) {
-            // Players have the same medals, so assign the same rank
-            currentPlayer.rank = currentRank;
+            currentPlayer.rank = currentRank; // Same rank if scores and medals match
         } else {
-            // Players have different medals, so increment the rank
             currentRank = i + 1;
-            currentPlayer.rank = currentRank;
+            currentPlayer.rank = currentRank; // Increment rank if different
         }
     }
 
-
+    // Generate the HTML table
     playerMedalsArray.forEach((row) => {
-        addGOAT(row.rank, row.name, row.singles, row.doubles, row.mixed, row.gold, row.silver, row.bronze)
+        addGOAT(row.rank, row.name, row.singles, row.doubles, row.mixed, row.gold, row.silver, row.bronze);
     });
-
-
 }
