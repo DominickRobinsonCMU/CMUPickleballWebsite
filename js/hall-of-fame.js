@@ -39,7 +39,14 @@ Tristan Ohler,Gamma,Doubles,Gold
 Drake Som,Gamma,Doubles,Gold
 Evan Zhang,Gamma,Doubles,Gold
 Evan Zhang,Gamma,Singles,Silver
-Vincent Sokalski,Gamma,Doubles,Bronze`;
+Vincent Sokalski,Gamma,Doubles,Bronze
+Andrew Li,Fall 2024 Club Tournament #1,Doubles,Gold
+Aiden Nguyen,Fall 2024 Club Tournament #1,Doubles,Gold
+Jack Ellinger,Fall 2024 Club Tournament #1,Doubles,Silver
+Yonah Goldberg,Fall 2024 Club Tournament #1,Doubles,Silver
+Saaransh Khandelwal,Fall 2024 Club Tournament #1,Doubles,Bronze
+Aryan Pandala,Fall 2024 Club Tournament #1,Doubles,Bronze`;
+
 
     // Parse the CSV data into an array of rows
     const rows = csvData.split('\n');
