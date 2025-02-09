@@ -18,7 +18,8 @@ function addGOAT(rank, name, medalsSingles, medalsDoubles, medalsMixed, medalsGo
 
 function createGOATList() {
     // Define the CSV file content
-    const csvData = `Gabriel Prado,Nitro,Singles,Bronze
+    const csvData =
+`Gabriel Prado,Nitro,Singles,Bronze
 Tristan Ohler,Gamma,Singles,Bronze
 Dominick Robinson,Gamma,Singles,Silver
 Alexa Carl,Gamma,Singles,Gold
@@ -27,8 +28,8 @@ Tristan Ohler,Battle at the Bridge,Doubles,Silver
 Gavin Ohler,Battle at the Bridge,Doubles,Silver
 Dominick Robinson,Battle at the Bridge,Doubles,Bronze
 Gabriel Prado,Battle at the Bridge,Doubles,Bronze
-Tristan Ohler,WV Championships,Doubles,Gold
-Claire Marlowe,WV Championships,Doubles,Gold
+Tristan Ohler,WV Championships,Mixed,Gold
+Claire Marlowe,WV Championships,Mixed,Gold
 Dominick Robinson,CMU vs CWRU vs OSU,Doubles,Silver
 Gabriel Prado,CMU vs CWRU vs OSU,Doubles,Silver
 Dominick Robinson,CMU vs Mt Aloysius,Doubles,Silver
@@ -45,7 +46,22 @@ Aiden Nguyen,Fall 2024 Club Tournament #1,Doubles,Gold
 Jack Ellinger,Fall 2024 Club Tournament #1,Doubles,Silver
 Yonah Goldberg,Fall 2024 Club Tournament #1,Doubles,Silver
 Saaransh Khandelwal,Fall 2024 Club Tournament #1,Doubles,Bronze
-Aryan Pandala,Fall 2024 Club Tournament #1,Doubles,Bronze`;
+Aryan Pandala,Fall 2024 Club Tournament #1,Doubles,Bronze
+Gavin Ohler,CMU Pickleball Giving Day Open,Doubles,Gold
+Gabriel Prado,CMU Pickleball Giving Day Open,Doubles,Gold
+Michael Tang,CMU Pickleball Giving Day Open,Doubles,Silver
+Danny Fiskin,CMU Pickleball Giving Day Open,Doubles,Silver
+Terrance Chen,CMU Pickleball Giving Day Open,Doubles,Bronze
+Tzu Yen Tseng,CMU Pickleball Giving Day Open,Doubles,Bronze
+Michael Tang,CMU Pickleball Super Bowl,Doubles,Gold
+Danny Fiskin,CMU Pickleball Super Bowl,Doubles,Gold
+Dominick Robinson,CMU Pickleball Super Bowl,Mixed,Silver
+Alexa Carl,CMU Pickleball Super Bowl,Mixed,Silver
+Terrance Chen,CMU Pickleball Super Bowl,Doubles,Bronze
+Gavin Glenn,CMU Pickleball Super Bowl,Doubles,Bronze
+Itamar,CMU Pickleball Super Bowl,Doubles,Bronze
+Crosby,CMU Pickleball Super Bowl,Doubles,Bronze`;
+
 
 
     // Parse the CSV data into an array of rows
